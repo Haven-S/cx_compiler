@@ -1,0 +1,23 @@
+/* The basic syntax of struct (error) */
+{
+  struct Student{
+    int score;
+  };
+  struct Teacher{
+    int age;
+  };
+  new Student stu0;
+  new Teacher stu1;
+  int score;
+  stu1 = stu0;
+  
+
+  Student.score = 100;
+  stu0.score = 50;
+  score = 10;
+  
+  write Student.score;
+  write stu0.score;
+  write score;
+  
+}

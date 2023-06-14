@@ -1,0 +1,26 @@
+/* nested struct declarations */
+{
+  struct Student{
+    int score;
+    int age;
+    bool gender;
+  };
+  struct Teacher{
+    int age;
+    Student stu;
+  };
+  new Teacher wang;
+  new Student xiaoming;
+  
+  wang.stu = xiaoming; /* Deep copy */
+  wang.age = 39;
+  wang.stu.age = 16;
+  xiaoming.age = 10;
+  
+  write wang.age;
+  write wang.stu.age;
+  write xiaoming.age;
+
+  wang.stu = xiaoming;
+  write wang.stu.age;
+}

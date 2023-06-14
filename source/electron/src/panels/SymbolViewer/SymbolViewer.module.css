@@ -1,0 +1,42 @@
+.Container {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 400px;
+  height: 400px;
+  border: 1px solid var(--main-color);
+  box-sizing: border-box;
+
+  white-space: pre;
+
+  font-family: Consolas;
+  font-size: 16px;
+  line-height: 20px; /* 行号高度 */
+
+  padding-left: 10px;
+}
+
+.highlight1{
+  color: #0da93c;
+}
+
+
+.highlight2{
+  color: #0039cc;
+}
+
+.highlight3{
+  color: #c87400;
+}
+
+.highlight4{
+  color: var(--main-color);
+}
+
+.small{
+  font-size: 12px;
+}
+
+.splitLine{
+  height: 10px;
+}

@@ -1,0 +1,51 @@
+{
+  "name": "cx_compiler",
+  "version": "1.0.0",
+  "description": "CXcompiler",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron --enable-remote-debugging .",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "electron": "^24.3.0",
+    "electron-builder": "^23.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "dependencies": {
+    "@ampproject/remapping": "^2.2.1",
+    "@electron/asar": "^3.2.4",
+    "@jridgewell/gen-mapping": "^0.3.3",
+    "@jridgewell/resolve-uri": "^3.1.1",
+    "@jridgewell/set-array": "^1.1.2",
+    "@jridgewell/sourcemap-codec": "^1.4.15",
+    "@jridgewell/trace-mapping": "^0.3.18",
+    "chromium-pickle-js": "^0.2.0",
+    "commander": "^10.0.1",
+    "cross-spawn": "^7.0.3",
+    "electron-packager": "^17.1.1",
+    "foreground-child": "^3.1.1",
+    "glob": "^10.2.6",
+    "path-key": "^4.0.0",
+    "shebang-command": "^2.0.0"
+  },
+  "build": {
+    "appId": "com.example.app",
+    "win": {
+      "target": "nsis"
+    },
+    "extraResources": [
+      "./compiler"
+    ]
+  }
+}

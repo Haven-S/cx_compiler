@@ -1,0 +1,20 @@
+/* variable scope */
+{
+  int a;
+  a = 1;
+  write a;
+  {
+    int a;
+
+    a = 11;
+    write a;
+    if(a == 11){
+      int a;
+
+      a = 111;
+      write a;
+    }
+  }
+  write a;
+  
+}

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  user-select: none;
+}
+
+body {
+  font-family: Consolas;
+}
+
+:root {
+  --main-color: #0077cc;
+  --main-color1: #54e57f;
+  --main-color2: #e55e5a;
+}

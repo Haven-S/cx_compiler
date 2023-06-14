@@ -1,0 +1,61 @@
+.wrapper{
+  width: 600px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.FileTabbar{
+  width: 1200px;
+  height: 24px;
+  display: flex;
+  
+}
+
+.iconBox{
+  width: 24px;
+  height: 24px;
+}
+
+.tabbarItem{
+  width: 120px;
+  height: 24px;
+  background-color: #dddddd;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  box-sizing: border-box;
+  padding: 2px;
+
+  transition: background-color 0.5s;
+
+  position: relative;
+}
+
+
+
+.tabbarItemActive{
+  background-color: #fff;
+}
+
+.tabbarItemActive::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  width: 90px;
+  height: 4px;
+  background-color: #dddddd;
+}
+
+.tabbarItemUnSaved{
+  color: var(--main-color);
+}

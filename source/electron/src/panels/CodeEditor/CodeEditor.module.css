@@ -1,0 +1,147 @@
+.textareaContainer {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 600px;
+  height: 300px;
+  border: 1px solid var(--main-color);
+  box-sizing: border-box;
+}
+
+.text{
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 100%;
+  height: auto;
+
+  resize: none; /* 禁止调整大小 */
+  outline: none; /* 清除外边框 */
+  border: none;
+  padding: 0; /* 清除内边距 */
+
+  overflow: hidden;
+  padding-left: 40px; /* 为行号留出空间 */
+
+  font-family: Consolas;
+  font-size: 16px;
+  line-height: 20px; /* 行号高度 */
+  padding-top: 2px; /* 垂直居中行号 */
+
+  font-weight: 500;
+
+  z-index: 5;
+
+  background: transparent;
+  color: transparent;
+  caret-color: #000;
+
+  box-sizing: border-box;
+}
+
+
+.lineNumbers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px; /* 行号宽度 */
+  height: auto;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  text-align: center;
+  color: #999;
+
+  font-family: Consolas;
+  font-size: 16px;
+  line-height: 20px; /* 行号高度 */
+  padding-top: 2px; /* 垂直居中行号 */
+  font-weight: 500;
+
+  box-sizing: border-box;
+}
+
+.emphasizedLines {
+  margin-top: 2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* background-color: #fdd6d6; */
+}
+
+.emphasizedLine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #fdd6d6;
+}
+
+.currentLine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #d6e4fd;
+}
+
+.readLine{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #d6fdd9;
+}
+
+.highlightedText{
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 100%;
+  height: auto;
+
+  overflow: hidden;
+  padding-left: 40px; /* 为行号留出空间 */
+
+  font-family: Consolas;
+  font-size: 16px;
+  line-height: 20px; /* 行号高度 */
+  padding-top: 2px; /* 垂直居中行号 */
+
+  font-weight: 500;
+
+  color: #000;
+  pointer-events: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.highlight0{
+  color: #00b47b;
+}
+
+
+.highlight1{
+  color: #0da93c;
+}
+
+
+.highlight2{
+  color: #0039cc;
+}
+
+.highlight3{
+  color: #c87400;
+}
+
+.highlight4{
+  color: var(--main-color);
+}
+
+.codePath{
+  font-size: 16px;
+}

@@ -1,0 +1,10 @@
+/* error */
+{
+  int a;
+  bool b;
+  bool a;
+  a = true;
+  a = b;
+  a = c + 1;
+  write b;
+}

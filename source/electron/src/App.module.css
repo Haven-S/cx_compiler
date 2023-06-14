@@ -1,0 +1,36 @@
+.viewport{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  overflow: auto;
+}
+
+.content{
+  flex: 1;
+  position: relative;
+  left: 0;
+  top: 0;
+
+  transition: all 1s;
+}
+
+.page{
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* .sideBarBox{
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  z-index: 999;
+} */
+
+.resultPanel,.runningPanel,.menuPanel{
+  display: flex;
+}

@@ -1,0 +1,22 @@
+/* calc least common multiple */
+{
+  int num1;
+  int num2;
+  int a;
+  int b;
+  int gcd;
+  int lcm;
+  read num1;
+  read num2;
+  a = num1;
+  b = num2;
+  while (a != b) {
+    if (a > b) {
+        a = a - b;
+    } else {
+        b = b - a;
+    }
+  }
+  lcm = ( num1 * num2 ) / a ;
+  write lcm;
+}

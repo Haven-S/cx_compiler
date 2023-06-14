@@ -1,0 +1,31 @@
+/* The basic usage of struct */
+{
+  struct student{
+    int score;
+    int age;
+    bool gender;
+  };
+  int num;
+  new student stu0;
+  new student stu1;
+
+  stu0.score = 100;
+  stu1.score = 50;
+  stu0.age = 19;
+  stu1.age = 18;
+  stu0.gender = true;
+  stu1.gender = false;
+
+  if(stu0.gender XOR stu1.gender){
+    int tmp;
+    tmp = stu0.age;
+    stu0.age = stu1.age;
+    stu1.age = tmp;
+  }
+
+  num = (stu0.score + stu1.score) / 2;
+
+  write num;
+  write stu0.age;
+  write stu1.age;
+}

@@ -1,0 +1,28 @@
+/* calc list of primes from 1 to 100 */
+{
+  int num;
+  num = 2;
+  while(num <= 100){
+    if(num<=2){
+      write num;
+    }
+    else{
+      int i;
+      bool flag;
+      i = 2;
+      flag = true;
+      while(i < num){
+        int mod;
+        mod = num % i;
+        if (mod == 0) {
+          flag = false;
+        }
+        i = i + 1;
+      }
+      if(flag){
+        write num;
+      }
+    }
+    num = num + 1;
+  }
+}

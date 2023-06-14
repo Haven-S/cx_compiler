@@ -1,0 +1,32 @@
+/* boolean expression */
+{
+  int a;
+  int b;
+  int num;
+  a = 100;
+  b = 101;
+  num = 0;
+  if(a == b){
+    write num;
+  }
+  num = num + 1;
+  if(a != b){
+    write num;
+  }
+  num = num + 1;
+  if(a < b){
+    write num;
+  }
+  num = num + 1;
+  if(a <= b){
+    write num;
+  }
+  num = num + 1;
+  if(a > b){
+    write num;
+  }
+  num = num + 1;
+  if(a >= b){
+    write num;
+  }
+}

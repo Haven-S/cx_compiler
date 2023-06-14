@@ -1,0 +1,12 @@
+/* calc factorial */
+{
+  int num;
+  int res;
+  read num;
+  res = 1;
+  while (num > 1) {
+    res = res * num;
+    num = num - 1;
+  }
+  write res;
+}

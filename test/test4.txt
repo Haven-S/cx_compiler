@@ -1,0 +1,56 @@
+/* program loops */
+{
+  /* if */
+  {
+    int a;
+    a = 0;
+    if(true){
+      a = a + 2;
+    }
+    if(false){
+      a = a + 1;
+    }
+    write a;
+  }
+  /* if else */
+  {
+    int a;
+    a = 0;
+    if(false){
+      a = a + 2;
+    }
+    else{
+      a = a + 1;
+    }
+    write a;
+  }
+  /* while */
+  {
+    int a;
+    a = 0;
+    while(a<10){
+      a = a + 2;
+    }
+    write a;
+  }
+  /* do while */
+  {
+    int a;
+    a = 0;
+    do{
+      a = a+2;
+    }
+    while(a<10)
+    write a;
+  }
+  /* repeat until */
+  {
+    int a;
+    a = 0;
+    repeat {
+      a = a + 2;
+    }
+    until(a>10)
+    write a;
+  }
+}
